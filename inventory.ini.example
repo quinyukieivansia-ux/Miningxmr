@@ -1,0 +1,15 @@
+# CONTOH inventory. Salin jadi inventory.ini lalu isi data VPS asli kamu.
+#   cp inventory.ini.example inventory.ini
+#   chmod 600 inventory.ini
+
+[workers]
+# --- Login pakai PASSWORD (butuh sshpass) ---
+# vps1  ansible_host=203.0.113.10  ansible_user=root  ansible_password='passwordVPS1'
+# vps2  ansible_host=203.0.113.11  ansible_user=root  ansible_password='passwordVPS2'
+#
+# --- Login pakai SSH KEY (lebih aman, disarankan) ---
+# vps1  ansible_host=203.0.113.10  ansible_user=root
+
+[workers:vars]
+ansible_python_interpreter=/usr/bin/python3
+ansible_ssh_common_args=-o StrictHostKeyChecking=accept-new -o ConnectTimeout=10

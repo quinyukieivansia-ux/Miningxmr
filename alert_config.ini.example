@@ -1,0 +1,13 @@
+# CONTOH konfigurasi alert Telegram.
+# Salin jadi alert_config.ini lalu isi dengan data asli kamu.
+#   cp alert_config.ini.example alert_config.ini
+#   chmod 600 alert_config.ini
+
+[telegram]
+bot_token = ISI_TOKEN_BOT_DARI_BOTFATHER
+owner_id = ISI_CHAT_ID_KAMU
+
+[thresholds]
+ram_pct = 90
+disk_pct = 90
+load_per_core = 2.0

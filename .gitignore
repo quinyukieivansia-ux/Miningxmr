@@ -1,0 +1,29 @@
+# ============================================================
+# JANGAN PERNAH push file rahasia ke GitHub!
+# (komentar HARUS di baris sendiri, bukan inline)
+# ============================================================
+
+# Kredensial & rahasia
+alert_config.ini
+inventory.ini
+*.key
+*.pem
+id_ed25519*
+id_rsa*
+
+# Data runtime (info internal fleet)
+dashboard/data/
+.alert_state.json
+
+# Log
+logs/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Editor
+.vscode/
+.idea/
+*.swp
