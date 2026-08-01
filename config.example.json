@@ -1,0 +1,26 @@
+{
+  "telegram": {
+    "token": "YOUR_TELEGRAM_BOT_TOKEN",
+    "admin_chat_id": 123456789
+  },
+  "upcloud": {
+    "username": "your_upcloud_username",
+    "password": "your_upcloud_password"
+  },
+  "mining": {
+    "pool_address": "stratum2.dogehouse.org:3333",
+    "wallet_address": "DKPkpQhV5CNMx7F8Hcdw8VrqX6oWt4WcJY",
+    "algorithm": "scrypt",
+    "worker_prefix": "miner-"
+  },
+  "scaling": {
+    "min_vps": 1,
+    "max_vps": 12,
+    "check_interval": 300,
+    "profit_threshold": 5.0
+  },
+  "paths": {
+    "data_dir": "/home/ubuntu/.mining_bot",
+    "ssh_key": "/home/ubuntu/.ssh/id_rsa"
+  }
+}

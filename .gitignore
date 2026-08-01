@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+logs/
+config.json
+.venv/
+*.egg-info/
+dist/
+build/
+.pm2/
+node_modules/
+.git/
